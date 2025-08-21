@@ -26,7 +26,7 @@ class PostController extends Controller
 
     public function postList()
     {
-        $posts = Post::with('category')->paginate(2);
+        $posts = Post::with('category')->paginate(5);
 
         return view('pages.admin.post-list', ['posts' => $posts]);
     }
