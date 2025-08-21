@@ -37,7 +37,12 @@
                         <i class="fas fa-pen mr-3 text-xs"></i>
                         <span>Category List</span>
                     </a>
-                    <a href="#"
+                    <a href="{{ route('admin.post-create-page') }}"
+                        class="flex items-center px-3 py-2 text-sm rounded-md text-gray-300 hover:bg-gray-700 hover:text-white pl-11">
+                        <i class="fas fa-pen mr-3 text-xs"></i>
+                        <span>Create Post</span>
+                    </a>
+                    <a href="{{ route('admin.post-list-page') }}"
                         class="flex items-center px-3 py-2 text-sm rounded-md text-gray-300 hover:bg-gray-700 hover:text-white pl-11">
                         <i class="fas fa-folder mr-3 text-xs"></i>
                         <span>All Posts</span>

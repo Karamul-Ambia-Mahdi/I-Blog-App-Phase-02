@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Controllers\Controller;
+use App\Models\Category;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class PageController extends Controller
 {
@@ -15,5 +16,10 @@ class PageController extends Controller
     public function createCategoryPage()
     {
         return view('pages.admin.create-category');
+    }
+    
+    public function createPostPage()
+    {
+        return view('pages.admin.create-post', ['categories' => Category::all()]);
     }
 }
