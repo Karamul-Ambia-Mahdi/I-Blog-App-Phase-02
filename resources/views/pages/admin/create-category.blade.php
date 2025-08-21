@@ -9,7 +9,7 @@
                 <div>
                     <label for="title" class="block text-sm font-medium text-gray-700">Title <span
                             class="text-red-500">*</span></label>
-                    <input type="text" id="title" name="title" value="{{ old('title') }}"
+                    <input type="text" id="title" name="title" value="{{ old('title') }}" required
                         class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500">
                     <br>
                     @error('title')
@@ -22,7 +22,7 @@
                 <div>
                     <label for="slug" class="block text-sm font-medium text-gray-700">Slug <span
                             class="text-red-500">*</span></label>
-                    <input type="text" id="slug" name="slug" value="{{ old('slug') }}"
+                    <input type="text" id="slug" name="slug" value="{{ old('slug') }}" required
                         class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500">
                     <br>
                     @error('slug')
@@ -35,7 +35,7 @@
                 <div>
                     <label for="parent_category" class="block text-sm font-medium text-gray-700">Parent Category <span
                             class="text-red-500">*</span></label>
-                    <select id="parent_category" name="parent_category"
+                    <select id="parent_category" name="parent_category" required
                         class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 bg-white focus:ring-blue-500 focus:border-blue-500">
                         <option value="">Select Parent Category</option>
                         <option value="web-development">Web Development</option>
@@ -54,7 +54,7 @@
                 <div>
                     <label for="description" class="block text-sm font-medium text-gray-700">Description <span
                             class="text-red-500">*</span></label>
-                    <textarea id="description" name="description" rows="4"
+                    <textarea id="description" name="description" required rows="4"
                         class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500">{{ old('description') }}</textarea>
                     <br>
                     @error('description')

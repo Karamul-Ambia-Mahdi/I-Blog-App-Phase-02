@@ -9,7 +9,7 @@
                 <div>
                     <label for="title" class="block text-sm font-medium text-gray-700">Title <span
                             class="text-red-500">*</span></label>
-                    <input type="text" id="title" name="title" value="{{ old('title') }}"
+                    <input type="text" id="title" name="title" value="{{ old('title') }}" required
                         class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500">
                     <br>
                     @error('title')
@@ -22,7 +22,7 @@
                 <div>
                     <label for="description" class="block text-sm font-medium text-gray-700">Description <span
                             class="text-red-500">*</span></label>
-                    <textarea id="description" name="description" rows="4"
+                    <textarea id="description" name="description" required rows="4"
                         class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500">{{ old('description') }}</textarea>
                     <br>
                     @error('description')
@@ -35,7 +35,7 @@
                 <div>
                     <label for="category_id" class="block text-sm font-medium text-gray-700">Category <span
                             class="text-red-500">*</span></label>
-                    <select id="category_id" name="category_id"
+                    <select id="category_id" name="category_id" required
                         class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 bg-white focus:ring-blue-500 focus:border-blue-500">
                         <option value="">Select Category</option>
                         @foreach ($categories as $category)
