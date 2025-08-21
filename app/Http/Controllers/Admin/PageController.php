@@ -16,8 +16,4 @@ class PageController extends Controller
     {
         return view('pages.admin.create-category');
     }
-    public function categoryListPage()
-    {
-        return view('pages.admin.category-list');
-    }
 }
